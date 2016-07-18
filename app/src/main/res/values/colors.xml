@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#00000000</color>
+    <color name="BlackLight">#2b303a</color>
+    <color name="BlackDark">#16222c</color>
+    <color name="BlueLight">#45B3F6</color>
+    <color name="BlueDark">#52A5CE</color>
+    <color name="RedLight">#dd2422</color>
+    <color name="RedDark">#a7191a</color>
+    <color name="YellowLight">#f1c41a</color>
+    <color name="YellowDark">#c39c12</color>
+    <color name="GreenLight">#2ecc71</color>
+    <color name="GreenDark">#209b54</color>
+    <color name="WhiteLight">#ffffff</color>
+    <color name="WhiteDark">#edf2f8</color>
+    <color name="SilverLight">#d9deea</color>
+    <color name="SilverDark">#8da9c3</color>
+    <color name="Accent">#88cdfb</color>
+    <color name="OrangeDark">#F17F43</color>
+    <color name="OrangeLight">#FAB53E</color>
+    <color name="OrangeMenu">#A0460F</color>
+    <color name="Gray">#EEE</color>
+    <color name="MyPanelTextColor">#4d91bf</color>
+    <color name="RedCardViewAlert">#f4ecec</color>
+    <color name="RedCardViewAlertTitle">#b17979</color>
+    <color name="RedCardViewAlertSubTitle">#ba8989</color>
+</resources>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ButtonGreen" parent="android:Widget.Button">
+        <item name="android:background">@drawable/selector_button_green</item>
+        <item name="android:textColor">@color/WhiteLight</item>
+        <item name="android:textSize">@dimen/TextSizeMedium</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/standard_margin</item>
+        <item name="android:paddingRight">@dimen/standard_margin</item>
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+    </style>
+
+    <style name="Edittext" parent="android:Widget.EditText">
+        <item name="android:textColor">@color/BlackLight</item>
+        <item name="android:textColorHint">@color/SilverLight</item>
+        <item name="android:textSize">@dimen/TextSizeMedium</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+    </style>
+
+    <style name="TextArea" parent="Edittext">
+        <item name="android:background">@drawable/shape_background_textarea</item>
+        <item name="android:gravity">top|start</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:lines">8</item>
+        <item name="android:maxLines">10</item>
+        <item name="android:minLines">6</item>
+        <item name="android:scrollbars">vertical</item>
+    </style>
+
+    <style name="DialogAnimationSlideDown">
+        <item name="android:windowEnterAnimation">@anim/slide_up_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_dialog</item>
+    </style>
+
+    <style name="DialogFullscreen" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@color/WhiteLight</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimationSlideDown</item>
+    </style>
+
+    <style name="RadioButton">
+        <item name="android:layout_marginBottom">@dimen/standard_margin_small</item>
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+        <item name="android:textColor">@color/SilverDark</item>
+        <item name="android:textSize">@dimen/TextSizeSmall</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:listSelector">@color/transparent</item>
+    </style>
+
+    <style name="CheckBoxAppTheme" parent="android:Widget.CompoundButton.CheckBox">
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+        <item name="android:paddingLeft">4dp</item>
+    </style>
+
+    <style name="spinnerItemStyle" parent="android:Widget.TextView.SpinnerItem">
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+        <item name="android:textColor">@color/SilverDark</item>
+        <item name="android:textSize">@dimen/TextSizeSmall</item>
+    </style>
+
+    <style name="spinnerDropDownItemStyle" parent="android:TextAppearance.Widget.TextView.SpinnerItem">
+        <item name="android:paddingLeft">@dimen/standard_margin_small</item>
+        <item name="android:background">@color/WhiteDark</item>
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+        <item name="android:textColor">@color/MyPanelTextColor</item>
+        <item name="android:textSize">@dimen/TextSizeSmall</item>
+    </style>
+
+    <style name="edittext" parent="android:Widget.EditText">
+        <item name="fontPath">fonts/OpenSans-Regular.ttf</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:background">@color/WhiteLight</item>
+        <item name="android:textColor">@color/OrangeDark</item>
+        <item name="android:textColorHint">@color/OrangeDark</item>
+        <item name="android:textCursorDrawable">@drawable/edit_text_cursor_drawable</item>
+    </style>
+
+    <style name="card_white">
+        <item name="android:background">@drawable/bg_card_white</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:minHeight">42dp</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="TextViewTitleRegular" parent="android:Widget.TextView">
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+        <item name="android:textColor">@color/WhiteLight</item>
+        <item name="android:textSize">@dimen/TextSizeMedium</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="TextViewTitleItalic" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceItalic</item>
+    </style>
+
+    <style name="TextViewTitleBold" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceBold</item>
+    </style>
+
+    <style name="TextViewTitleBoldItalic" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceBoldItalic</item>
+    </style>
+
+    <style name="TextViewTitleMedium" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceMedium</item>
+    </style>
+
+    <style name="TextViewTitleMediumItalic" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceMediumItalic</item>
+    </style>
+
+    <style name="TextViewTitleLight" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceLight</item>
+    </style>
+
+    <style name="TextViewTitleLightItalic" parent="TextViewTitleRegular">
+        <item name="android:textAppearance">@style/TextAppearanceLightItalic</item>
+    </style>
+
+    <style name="TextViewDescriptionRegular" parent="android:Widget.TextView">
+        <item name="android:textAppearance">@style/TextAppearanceRegular</item>
+        <item name="android:textColor">@color/WhiteLight</item>
+        <item name="android:textSize">@dimen/TextSizeSmall</item>
+    </style>
+
+    <style name="TextViewLink" parent="TextViewDescriptionRegular">
+        <item name="android:textSize">@dimen/TextSizeSmall</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textColor">@color/selector_link</item>
+        <item name="android:padding">@dimen/standard_margin_small</item>
+    </style>
+
+    <style name="TextViewDescriptionItalic" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceItalic</item>
+    </style>
+
+    <style name="TextViewDescriptionBold" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceBold</item>
+    </style>
+
+    <style name="TextViewDescriptionBoldItalic" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceBoldItalic</item>
+    </style>
+
+    <style name="TextViewDescriptionMedium" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceMedium</item>
+    </style>
+
+    <style name="TextViewDescriptionMediumItalic" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceMediumItalic</item>
+    </style>
+
+    <style name="TextViewDescriptionLight" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceLight</item>
+    </style>
+
+    <style name="TextViewDescriptionLightItalic" parent="TextViewDescriptionRegular">
+        <item name="android:textAppearance">@style/TextAppearanceLightItalic</item>
+    </style>
+
+
+    <!--TEXT APPEARANCE-->
+    <style name="TextAppearanceBold" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Bold.ttf</item>
+    </style>
+
+    <style name="TextAppearanceBoldItalic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-BoldItalic.ttf</item>
+    </style>
+
+    <style name="TextAppearanceItalic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Italic.ttf</item>
+    </style>
+
+    <style name="TextAppearanceLight" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Light.ttf</item>
+    </style>
+
+    <style name="TextAppearanceLightItalic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-LightItalic.ttf</item>
+    </style>
+
+    <style name="TextAppearanceMedium" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Medium.ttf</item>
+    </style>
+
+    <style name="TextAppearanceMediumItalic" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-MediumItalic.ttf</item>
+    </style>
+
+    <style name="TextAppearanceRegular" parent="android:TextAppearance">
+        <item name="fontPath">fonts/Roboto-Regular.ttf</item>
+    </style>
+
+</resources>

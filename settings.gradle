@@ -1,0 +1,1 @@
+include ':app', ':parallaxviewpager', ':ocypode-application', ':volley-rest-client'

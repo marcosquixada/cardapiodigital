@@ -1,0 +1,37 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="bottom">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="@string/dialog_reserva"
+            android:textColor="@color/WhiteLight"
+            android:textSize="@dimen/TextSizeLarge"
+            android:paddingBottom="20dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/dialog_thanks_button_ok"
+        style="@style/ButtonGreen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:background="@drawable/bg_button_green_normal"
+        android:textColor="@color/OrangeDark"
+        android:minHeight="48dp"
+        android:text="@string/ok"
+        android:textAllCaps="true" />
+
+</LinearLayout>

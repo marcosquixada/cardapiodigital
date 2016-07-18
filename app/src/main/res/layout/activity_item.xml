@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteDark">
+
+    <include layout="@layout/container_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp">
+
+        <ImageView
+            android:id="@+id/activity_item_imageview_imagem"
+            android:layout_width="match_parent"
+            android:layout_height="286dp"
+            android:layout_gravity="center"
+            android:scaleType="fitCenter"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="@color/WhiteLight">
+            <TextView
+                android:id="@+id/activity_item_textview_nome"
+                style="@style/TextViewDescriptionBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textColor="@color/BlackDark"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextViewDescriptionRegular"
+                android:padding="10dp"
+                android:textColor="@color/BlackLight"
+                android:text="Ingredientes:"
+                />
+            <TextView
+                android:id="@+id/activity_item_textview_ingredientes"
+                style="@style/TextViewDescriptionRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:textColor="@color/BlueDark"
+                />
+            <TextView
+                android:id="@+id/activity_item_textview_valor"
+                style="@style/TextViewDescriptionRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/GreenDark"
+                android:gravity="end"
+                />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/activity_item_button_send"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/ButtonGreen"
+            android:textSize="15dp"
+            android:text="PEDIR AGORA"/>
+    </LinearLayout>
+</FrameLayout>

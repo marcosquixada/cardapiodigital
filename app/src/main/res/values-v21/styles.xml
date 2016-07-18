@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/BlueLight</item>
+        <item name="colorAccent">@color/BlueLight</item>
+        <item name="android:colorPrimaryDark">@color/BlueLight</item>
+        <item name="android:colorPrimary">@color/BlueLight</item>
+        <item name="android:windowBackground">@color/WhiteLight</item>
+    </style>
+
+    <style name="ThemeSplashscreen" parent="AppTheme">
+        <item name="android:colorPrimaryDark">@color/BlueLight</item>
+        <item name="android:colorPrimary">@color/BlueLight</item>
+        <item name="android:windowBackground">@color/WhiteLight</item>
+    </style>
+
+
+</resources>

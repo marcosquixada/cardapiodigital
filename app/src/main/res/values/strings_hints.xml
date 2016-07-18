@@ -1,0 +1,5 @@
+<resources>
+    <string name="hint_domain">My Domain</string>
+    <string name="hint_login">Login</string>
+    <string name="hint_password">••••••••</string>
+</resources>

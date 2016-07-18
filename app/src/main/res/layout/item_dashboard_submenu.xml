@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="@dimen/standard_margin"
+    android:paddingRight="@dimen/standard_margin">
+
+    <TextView
+        android:id="@+id/item_dashboard_submenu_textview_title"
+        style="@style/TextViewDescriptionRegular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:textColor="@color/BlueDark"
+        android:textSize="@dimen/TextSizeMicro" />
+
+</LinearLayout>

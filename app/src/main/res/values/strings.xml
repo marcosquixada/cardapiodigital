@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">JaPedi</string>
+
+    <string name="senderID">639287541707</string>
+
+
+    <string name="loading_users_data">Carregando...</string>
+
+    <string name="button_enter">Entrar</string>
+    <string name="user_name">Name</string>
+    <string name="not_notification">Sem notificações</string>
+    <string name="cancel">Cancelar</string>
+
+    <!--Not Connection-->
+    <string name="not_connection_msg">Não há conexão com o servidor, por favor tente novamente quando estiver conectado.</string>
+    <string name="not_connection_title">Sem Conexão</string>
+    <string name="not_connection_btn">CONECTAR</string>
+
+    <string name="version_name">Version 1.1.0 Produção</string>
+    <string name="organization">JaPedi</string>
+    <string name="all_rights_reserved">Todos os Direitos Reservados.</string>
+    <string name="comedians">Comediantes</string>
+    <string name="partners">Parceiros</string>
+    <string name="agenda">AGENDA</string>
+    <string name="agenda_shows">Rossicléa \n Segunda-feira \n \n Hiran Delmar \n Terça-feira \n \n Skolástica \n Quarta-feira \n \n Adamastor Pitaco \n Quinta-feira \n \n Titela - Alex Nogueira \n Sexta-feira</string>
+    <string name="joke_text">Conversa de casados: Querido, o que você prefere? Uma mulher bonita ou uma mulher inteligente? Nem uma, nem outra. Você sabe que eu só gosto de você.</string>
+    <string name="joke">PIADA DO DIA</string>
+    <string name="humor">HUMOR DE PRIMEIRA</string>
+    <string name="humoristas">HUMORISTAS</string>
+    <string name="news">VALORES</string>
+    <string name="reservas">RESERVAS ONLINE</string>
+    <string name="endereco">Rua dos Tabajaras, 340 \n Praia do Iracema, Fortaleza - CE \n (85) 3219-2829</string>
+    <string name="dialog_reserva">SUA MESA ESTÁ RESERVADA \n DAS 19H30 ATÉ AS 20H30</string>
+    <string name="reservation_message">RESERVAS DE MESA SOMENTE ATÉ AS 17H.\n CARO CLIENTE, AGILIZE A SUA ENTRADA NA LUPUS BIER, INFORME NA PORTARIA O NOME DA SUA RESERVA.\n
+OBS: CRIANÇAS DE 5 A 10 ANOS PAGAM MEIA(APRESENTANDO IDENTIFICAÇÃO)</string>
+    <string name="birthday_message">Convide 4 amigos ou mais, faça sua reserva e ganhe a sua cortesia.(Somente apresentando a identidade ao gerente)</string>
+</resources>

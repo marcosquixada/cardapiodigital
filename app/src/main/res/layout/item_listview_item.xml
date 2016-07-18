@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/standard_margin_small"
+    android:background="@color/transparent"
+    android:cacheColorHint="@color/transparent"
+    >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="15dp">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/item_listview_item_imageview_avatar"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginRight="@dimen/standard_margin_small"
+                android:adjustViewBounds="true"
+                android:background="@drawable/img_orb_avatar"
+                android:contentDescription="@string/app_name"
+                android:padding="1.5dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_toRightOf="@+id/item_listview_item_imageview_avatar">
+
+                <TextView
+                android:id="@+id/item_listview_item_textview_nome"
+                style="@style/TextViewDescriptionBold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/BlueDark"
+
+                />
+            <TextView
+                android:id="@+id/item_listview_item_textview_tempo"
+                style="@style/TextViewDescriptionRegular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:paddingLeft="5dp"
+                android:textColor="@color/BlueDark"
+                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/item_listview_item_textview_valor"
+                        style="@style/TextViewDescriptionRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/GreenDark"
+                        android:gravity="end"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+</LinearLayout>

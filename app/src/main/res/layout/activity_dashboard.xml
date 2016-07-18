@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/container_toolbar"/>
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/drawer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/content_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/background">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="20dp">
+
+                <Button
+                    android:id="@+id/activity_dashboard_button_menu"
+                    style="@style/TextViewDescriptionBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="CARDÁPIO"
+                    android:textColor="@color/WhiteDark"
+                    android:background="@color/BlueDark"
+                    android:textSize="20sp"
+                    />
+                <Button
+                    android:id="@+id/activity_dashboard_button_garcom"
+                    style="@style/TextViewDescriptionBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="CHAMAR GARÇOM"
+                    android:textColor="@color/WhiteDark"
+                    android:background="@color/BlueDark"
+                    android:textSize="20sp"
+                    />
+                <Button
+                    android:id="@+id/activity_dashboard_button_delivery"
+                    style="@style/TextViewDescriptionBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="DELIVERY"
+                    android:textColor="@color/WhiteDark"
+                    android:background="@color/BlueDark"
+                    android:textSize="20sp"
+                    />
+                <Button
+                    android:id="@+id/activity_dashboard_button_paymment"
+                    style="@style/TextViewDescriptionBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="PAGAR CONTA"
+                    android:textColor="@color/WhiteDark"
+                    android:background="@color/BlueDark"
+                    android:textSize="20sp"
+                    />
+
+                <Button
+                    android:id="@+id/activity_dashboard_button_reservas"
+                    style="@style/TextViewDescriptionBold"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:gravity="center"
+                    android:layout_marginTop="15dp"
+                    android:text="RESERVAS"
+                    android:textColor="@color/WhiteDark"
+                    android:background="@color/BlueDark"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- Side navigation drawer UI -->
+        <FrameLayout
+            android:id="@+id/content_sliding_menu_left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@color/WhiteLight" />
+
+        <FrameLayout
+            android:id="@+id/content_sliding_menu_right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:background="@color/WhiteDark" />
+
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_sub_menu_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/SilverLight">
+
+    <LinearLayout
+        android:id="@+id/fragment_sub_menu_container_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_toLeftOf="@+id/fragment_sub_menu_button_back"
+        android:background="@color/BlueLight"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fragment_sub_menu_textview_title"
+            style="@style/TextViewTitleBold"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="@dimen/TextSizeSmall" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/fragment_sub_menu_oclistview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fragment_sub_menu_container_header"
+        android:layout_toLeftOf="@+id/fragment_sub_menu_button_back"
+        android:divider="@color/transparent"
+        android:scrollbars="none" />
+
+    <FrameLayout
+        android:id="@+id/fragment_sub_menu_button_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/BlueDark">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/standard_margin_small"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_launcher" />
+    </FrameLayout>
+
+</RelativeLayout>

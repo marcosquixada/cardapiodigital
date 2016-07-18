@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <include layout="@layout/container_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_pages" />
+        
+        <ScrollView
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/activity_agenda_textview_mensagem"
+                        style="@style/TextViewDescriptionRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/reservation_message"
+                        android:textColor="@color/WhiteLight"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    style="@style/card_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_item_category">
+
+                    <EditText
+                        android:id="@+id/activity_reservation_textview_nome"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteLight"
+                        android:cursorVisible="true"
+                        android:gravity="top|left"
+                        android:hint="Nome"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:maxLines="5"
+                        android:minLines="3"
+                        android:padding="5dp"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_item_category"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Data"/>
+
+                    <DatePicker
+                        android:id="@+id/activity_reservation_datepicker_date"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:calendarViewShown="false"
+                        android:datePickerMode="spinner"
+                        android:gravity="top|left"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/card_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_item_category"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Numero de pessoas"/>
+
+                    <NumberPicker
+                        android:id="@+id/activity_reservation_numberpicker_pessoas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:cursorVisible="true"
+                        android:gravity="top|left"
+                        android:padding="10dp" />
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    style="@style/card_white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/bg_item_category">
+
+                    <EditText
+                        android:id="@+id/activity_reservation_textview_contato"
+                        style="@style/edittext"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/WhiteLight"
+                        android:cursorVisible="true"
+                        android:gravity="top|left"
+                        android:hint="Contato"
+                        android:inputType="textMultiLine"
+                        android:lines="3"
+                        android:maxLines="5"
+                        android:minLines="3"
+                        android:padding="5dp"
+                        android:scrollbars="vertical" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <Button
+                        android:id="@+id/activity_reservation_button_enviar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/background_material_dark"
+                        android:textColor="@color/OrangeLight"
+                        android:text="Enviar"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                    <TextView
+                        android:id="@+id/activity_agenda_textview_text"
+                        style="@style/TextViewDescriptionRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="@string/endereco"
+                        android:textColor="@color/WhiteLight"
+                        android:textSize="15sp"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</FrameLayout>

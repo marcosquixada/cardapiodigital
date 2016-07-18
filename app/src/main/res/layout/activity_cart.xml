@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/WhiteDark"
+    >
+
+    <include layout="@layout/container_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:layout_marginTop="?android:attr/actionBarSize"
+        android:orientation="vertical">
+
+        <include layout="@layout/header_pages" />
+        <ListView
+            android:id="@+id/container_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:dividerHeight="1dp"
+            android:divider="@color/Gray"
+            android:listSelector="@color/transparent"
+            android:scrollbars="none" />
+
+        <TextView
+            android:id="@+id/activity_cart_textview_total"
+            style="@style/TextViewDescriptionBold"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textColor="@color/WhiteDark"
+            android:background="@color/BlueLight"
+            />
+    </LinearLayout>
+</FrameLayout>

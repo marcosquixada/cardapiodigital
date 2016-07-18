@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/BlueLight</item>
+        <item name="android:windowBackground">@color/WhiteLight</item>
+        <item name="searchViewStyle">@style/AppTheme.SearchView</item>
+    </style>
+
+    <style name="ThemeSplashscreen" parent="AppTheme">
+        <item name="android:windowBackground">@color/WhiteDark</item>
+    </style>
+
+    <style name="AppTheme.SearchView" parent="Widget.AppCompat.Light.SearchView">
+        <!--<item name="searchIcon">@drawable/ic_action_pause</item>-->
+        <!--<item name="closeIcon">@drawable/ic_action_blocked</item>-->
+        <!--<item name="queryHint">Test</item>-->
+        <!--<item name="commitIcon">@drawable/ic_arrow</item>-->
+        <!--<item name="goIcon">@drawable/ic_action_notify</item>-->
+    </style>
+
+</resources>

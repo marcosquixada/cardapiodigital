@@ -1,0 +1,45 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_splash"
+    android:padding="@dimen/standard_margin"
+    tools:context=".application.activity.QRCodeActivity"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clique para ler"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/BlackDark"/>
+
+    <ImageView
+        android:id="@+id/QrCode"
+        android:layout_width="196dp"
+        android:layout_height="286dp"
+        android:src="@drawable/qrcode"
+        android:layout_gravity="center"
+        android:paddingTop="5dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/WhiteDark"
+        android:layout_gravity="bottom|center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mq"
+            android:layout_gravity="center"
+            android:padding="5dp"/>
+
+    </LinearLayout>
+</FrameLayout>
