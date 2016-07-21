@@ -4,9 +4,7 @@
     <string name="title_activity_about">Sobre Nós</string>
     <string name="title_activity_itens">Itens</string>
     <string name="title_activity_item">Item</string>
+    <string name="title_activity_cart">Meus Pedidos</string>
     <string name="title_activity_reservation">Reservas Online</string>
-    <string name="title_activity_birthday">Aniversariante do dia</string>
-    <string name="title_activity_joke">Piada do dia</string>
     <string name="title_activity_categorias">Categorias</string>
-    <string name="title_activity_partners">Parceiros</string>
 </resources>

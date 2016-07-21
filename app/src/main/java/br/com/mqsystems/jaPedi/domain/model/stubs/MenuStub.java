@@ -17,7 +17,7 @@ public class MenuStub {
         List<Object> items = new ArrayList<>();
 
         //items.add(new MenuSection(R.drawable.ic_order, "MENU"));
-        items.add(new Menu(1, R.drawable.drawer_boll, "Sobre nós", AboutActivity.class));
+        items.add(new Menu(1, "Sobre nós", AboutActivity.class));
 
         return items;
     }

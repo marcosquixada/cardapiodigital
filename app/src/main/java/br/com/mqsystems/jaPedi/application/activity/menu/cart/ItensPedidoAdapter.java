@@ -63,7 +63,7 @@ public class ItensPedidoAdapter extends ArrayAdapter<ItemPedido> {
         ItemPedido item = getItem(position);
 
 
-        ImageLoader.getInstance().displayImage(item.item.imagem, holder.avatar, mOptions);
+        ImageLoader.getInstance().displayImage(item.item.imagem.replace("media","japedi/media"), holder.avatar, mOptions);
 
         holder.avatar.setOnClickListener(new View.OnClickListener() {
             @Override

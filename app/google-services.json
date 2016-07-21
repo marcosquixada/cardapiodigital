@@ -1,17 +1,17 @@
 {
   "project_info": {
-    "project_id": "lupus-2c856",
+    "project_id": "japedi-2c856",
     "project_number": "639287541707",
-    "name": "Lupus"
+    "name": "jaPedi"
   },
   "client": [
     {
       "client_info": {
         "mobilesdk_app_id": "1:639287541707:android:b499ccf6f89f6950",
-        "client_id": "android:br.com.mqsystems.lupus",
+        "client_id": "android:br.com.mqsystems.jaPedi",
         "client_type": 1,
         "android_client_info": {
-          "package_name": "br.com.mqsystems.lupus"
+          "package_name": "br.com.mqsystems.jaPedi"
         }
       },
       "oauth_client": [],

@@ -15,7 +15,7 @@ public interface APIService {
     void getCategorias(Handler<Categoria[]> handler);
     void getItems(Handler<Item[]> handler, Categoria categoria);
     void createOrder(final Handler<Pedido> handler, String endPoint);
-    void insertItem(final Handler<ItemPedido> handler, Pedido pedido, Item item);
+    void insertItem(final Handler<ItemPedido> handler, Pedido pedido, Item item, int quantidade);
     void sendReservas(Handler<JsonObject> handler,String data, String nome, String quantidade, String contato);
     void sendRegister(Handler<Boolean> handler, String token, String name);
 }

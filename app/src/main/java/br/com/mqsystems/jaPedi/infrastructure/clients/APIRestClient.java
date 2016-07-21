@@ -83,11 +83,11 @@ public class APIRestClient extends AbstractVolleyRestClient implements APIServic
     }
 
     @Override
-    public void insertItem(final Handler<ItemPedido> handler, Pedido pedido, Item item) {
+    public void insertItem(final Handler<ItemPedido> handler, Pedido pedido, Item item, int quantidade) {
         String url = createUrl("item_order/" + pedido.id + "/" + item.id);
 
         GsonRequest<ItemPedido> request = new GsonRequest<>(
-                Request.Method.POST, url, ItemPedido.class, handler, requestTaskHeader(), new RequestHelper.ListenerCatchingException<ItemPedido>() {
+                Request.Method.POST, url, ItemPedido.class, handler, requestTaskHeader(), requestPedidoParams(quantidade), new RequestHelper.ListenerCatchingException<ItemPedido>() {
             @Override
             public void onResponse(ItemPedido response) throws JSONException {
                 handler.onSuccess(response);
@@ -143,6 +143,12 @@ public class APIRestClient extends AbstractVolleyRestClient implements APIServic
         params.put("token", token);
         params.put("name", name);
         params.put("operating_system","Android");
+        return params;
+    }
+
+    private Map<String, String> requestPedidoParams(int quantidade) {
+        Map<String, String> params = new HashMap<>();
+        params.put("quantidade", String.valueOf(quantidade));
         return params;
     }
 

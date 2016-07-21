@@ -55,7 +55,7 @@ public class CartActivity extends AbstractActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        mTextViewTitle.setText(getString(R.string.title_activity_itens));
+        mTextViewTitle.setText(getString(R.string.title_activity_cart));
     }
 
     @Override
@@ -67,12 +67,12 @@ public class CartActivity extends AbstractActionBarActivity {
             total = total + (itemPedido.item.valor * itemPedido.quantidade);
         }
         NumberFormat format = NumberFormat.getCurrencyInstance(Locale.getDefault());
-        mTextViewTotal.setText(format.format(total));
+        mTextViewTotal.setText("TOTAL " + format.format(total));
     }
 
     private void setAdapter(List<ItemPedido> itens) {
         mListView.setAdapter(mItensAdapter = new ItensPedidoAdapter(this, itens));
-        mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+        /*mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 Item item = (Item) parent.getItemAtPosition(position);
@@ -80,6 +80,6 @@ public class CartActivity extends AbstractActionBarActivity {
                 bundle.putSerializable("item", item);
                 pushActivity(ItemActivity.class, bundle);
             }
-        });
+        });*/
     }
 }

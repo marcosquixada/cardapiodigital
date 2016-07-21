@@ -62,7 +62,7 @@ public class ItensAdapter extends ArrayAdapter<Item> {
         Item item = getItem(position);
 
 
-        ImageLoader.getInstance().displayImage(item.imagem, holder.avatar, mOptions);
+        ImageLoader.getInstance().displayImage(item.imagem.replace("media","japedi/media"), holder.avatar, mOptions);
 
         holder.avatar.setOnClickListener(new View.OnClickListener() {
             @Override

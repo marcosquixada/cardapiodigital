@@ -2,9 +2,12 @@ package br.com.mqsystems.jaPedi.application.activity.menu.itens;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
@@ -47,6 +50,15 @@ public class ItemActivity extends AbstractActionBarActivity {
     @InjectView(R.id.activity_item_textview_valor)
     private TextView mTextViewValor;
 
+    @InjectView(R.id.activity_item_quantidade)
+    private EditText mEditTextQuantidade;
+
+    @InjectView(R.id.activity_item_add)
+    private ImageButton mImageButtonAdd;
+
+    @InjectView(R.id.activity_item_sub)
+    private ImageButton mImageButtonSub;
+
     @InjectView(R.id.activity_item_imageview_imagem)
     private ImageView mImageViewImagem;
 
@@ -61,9 +73,15 @@ public class ItemActivity extends AbstractActionBarActivity {
 
     private DisplayImageOptions mOptions;
 
+    private int mQuantidade = 1;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        mButton = (Button) findViewById(R.id.activity_item_button_send);
+
+        mEditTextQuantidade.setText(String.valueOf(mQuantidade));
 
         mOptions = new DisplayImageOptions.Builder()
                 .showImageOnLoading(R.drawable.ic_launcher)
@@ -92,9 +110,29 @@ public class ItemActivity extends AbstractActionBarActivity {
         }
         mTextViewNome.setText(item.nome);
         mTextViewIngredientes.setText(ingredientes);
-        ImageLoader.getInstance().displayImage(item.imagem, mImageViewImagem, mOptions);
+        ImageLoader.getInstance().displayImage(item.imagem.replace("media","japedi/media"), mImageViewImagem, mOptions);
         NumberFormat format = NumberFormat.getCurrencyInstance(Locale.getDefault());
         mTextViewValor.setText(format.format(item.valor));
+        mImageButtonAdd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mQuantidade = mQuantidade + 1;
+                mEditTextQuantidade.setText(String.valueOf(mQuantidade));
+                NumberFormat format = NumberFormat.getCurrencyInstance(Locale.getDefault());
+                mTextViewValor.setText(format.format(item.valor * mQuantidade));
+            }
+        });
+        mImageButtonSub.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(mQuantidade > 1){
+                    mQuantidade = mQuantidade - 1;
+                }
+                mEditTextQuantidade.setText(String.valueOf(mQuantidade));
+                NumberFormat format = NumberFormat.getCurrencyInstance(Locale.getDefault());
+                mTextViewValor.setText(format.format(item.valor * mQuantidade));
+            }
+        });
         mButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -103,9 +141,11 @@ public class ItemActivity extends AbstractActionBarActivity {
                     @Override
                     public void onSuccess(ItemPedido response) {
                         ProgressDialogUtil.dismissProgress();
+                        response.item.imagem = item.imagem;
                         mSessionUserApplication.pedido.itens = Arrays.copyOf(mSessionUserApplication.pedido.itens, mSessionUserApplication.pedido.itens.length +1);
                         mSessionUserApplication.pedido.itens[mSessionUserApplication.pedido.itens.length - 1] = response;
                         Toast.makeText(ItemActivity.this,"Seu pedido foi enviado com sucesso!",Toast.LENGTH_LONG).show();
+                        onBackPressed();
                     }
 
                     @Override
@@ -113,7 +153,7 @@ public class ItemActivity extends AbstractActionBarActivity {
                         ProgressDialogUtil.dismissProgress();
                         Toast.makeText(ItemActivity.this,"Ocorreu um erro, tente novamente por favor!",Toast.LENGTH_LONG).show();
                     }
-                }, mSessionUserApplication.pedido, item);
+                }, mSessionUserApplication.pedido, item, mQuantidade);
             }
         });
     }

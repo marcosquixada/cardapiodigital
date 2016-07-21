@@ -40,15 +40,25 @@
                 android:textColor="@color/BlueDark"
 
                 />
-            <TextView
-                android:id="@+id/item_listview_item_textview_tempo"
-                style="@style/TextViewDescriptionRegular"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginRight="10dp"
-                android:paddingLeft="5dp"
-                android:textColor="@color/BlueDark"
-                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+                    <ImageView
+                        android:layout_width="22dp"
+                        android:layout_height="22dp"
+                        android:src="@drawable/ic_menu_alarm_clock"/>
+                    <TextView
+                        android:id="@+id/item_listview_item_textview_tempo"
+                        style="@style/TextViewDescriptionRegular"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="10dp"
+                        android:paddingLeft="5dp"
+                        android:textColor="@color/BlackLight"
+                    />
+                </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

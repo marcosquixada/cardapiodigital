@@ -47,7 +47,7 @@ public class QRCodeActivity extends AbstractActionBarActivity {
                 scanFromFragment();
             }
         });
-        ProgressDialogUtil.showProgress(this);
+        /*ProgressDialogUtil.showProgress(this);
         mAPIService.createOrder(new Handler<Pedido>() {
             @Override
             public void onSuccess(Pedido response) {
@@ -60,7 +60,7 @@ public class QRCodeActivity extends AbstractActionBarActivity {
             public void onFail(Exception error) {
                 ProgressDialogUtil.dismissProgress();
             }
-        },"http://192.168.2.107:8000/create_order/2");
+        },"http://192.241.241.25/japedi/create_order/1");*/
 
     }
 
@@ -90,6 +90,7 @@ public class QRCodeActivity extends AbstractActionBarActivity {
                     @Override
                     public void onFail(Exception error) {
                         ProgressDialogUtil.dismissProgress();
+                        Toast.makeText(QRCodeActivity.this, "A mesa já esta aberta. Por favor verifique com um garçom! ", Toast.LENGTH_LONG).show();
                     }
                 },endPoint);
             }

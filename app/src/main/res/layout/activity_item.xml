@@ -15,7 +15,7 @@
         <ImageView
             android:id="@+id/activity_item_imageview_imagem"
             android:layout_width="match_parent"
-            android:layout_height="286dp"
+            android:layout_height="226dp"
             android:layout_gravity="center"
             android:scaleType="fitCenter"/>
 
@@ -49,14 +49,44 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:padding="10dp"
-                android:textColor="@color/BlueDark"
+                android:textColor="@color/BlackLight"
                 />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:padding="5dp">
+                <ImageButton
+                    android:id="@+id/activity_item_add"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/ic_menu_add"
+                    android:layout_gravity="center"/>
+                <EditText
+                    android:id="@+id/activity_item_quantidade"
+                    style="@style/Edittext"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="20dp"
+                    android:gravity="center_horizontal"
+                    android:editable="false"/>
+                <ImageButton
+                    android:id="@+id/activity_item_sub"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_menu_sub"/>
+            </LinearLayout>
             <TextView
                 android:id="@+id/activity_item_textview_valor"
-                style="@style/TextViewDescriptionRegular"
+                style="@style/TextViewDescriptionBold"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="10dp"
+                android:textSize="20dp"
+                android:text="R$50,00"
                 android:paddingLeft="5dp"
                 android:textColor="@color/GreenDark"
                 android:gravity="end"

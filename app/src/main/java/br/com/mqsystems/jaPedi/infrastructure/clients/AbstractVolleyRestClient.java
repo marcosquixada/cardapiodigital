@@ -11,7 +11,7 @@ import org.json.JSONObject;
 
 abstract public class AbstractVolleyRestClient {
 
-    private static final String END_POINT_URI = "http://192.168.2.107:8000/api/v1/";
+    private static final String END_POINT_URI = "http://192.241.241.25/japedi/api/v1/";
 
 	private RequestQueueVolley mRequestQueueVolley;
 
